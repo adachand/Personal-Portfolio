@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        background-color: rgb(0, 0, 33);
+        color: white;
+        font-family: 'Poppins', sans-serif;
+    }
+
+    .fixedheader {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        background-color: rgb(9, 9, 61);
+        z-index: 1000; 
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        height: 70px;
+        background-color: rgb(9, 9, 61);
+        ;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    nav ul li {
+        list-style: none;
+        margin: 0 23px;
+    }
+
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(175, 175, 231);
+        font-size: 1.1rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+    }
+
+    .first {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        margin: 130px 20px;
+    }
+
+    .first div {
+        width: 30%;
+        padding: 10px;
+    }
+
+    .first ul {
+        list-style: none;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .leftsection {
+        font-size: 2rem;
+    }
+
+    .leftsection li{
+        list-style: none;
+    }
+
+    .rightsection {
+        width: 80%;
+        justify-content: center;
+    }
+
+    img {
+        border-radius: 50%;
+    }
+
+    .purple {
+        color: rgb(151, 69, 205);
+    }
+
+    .textgrey {
+        color: gray;
+    }
+
+    #element {
+        color: rgb(151, 69, 205);
+    }
+
+    .button{
+        display: flex;
+        list-style: none;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px;
+        margin: 15px;
+        background: transparent;
+    }
+
+
+    .button .btn:hover{
+        background: transparent;
+        font-size: 2rem;
+        transition: 0.4s;
+    }
+
+    .leftsection .btn{
+        padding: 12px;
+        color: white;
+        border: 2px solid rgb(13, 76, 171);
+        cursor: pointer;
+    }
+
+    .about {
+        max-width: 80vw;
+        height: 300px;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+        font-size: 1.5rem;
+    }
+
+    .about h1 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .skills {
+        max-width: 80vw;
+        height: 20vw;
+        text-align: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .skills h1 {
+        font-size: 1.6rem;
+    }
+
+    .skills ul {
+        display: flex;
+        justify-content: center;
+    }
+
+    .skills ul li {
+        list-style: none;
+        margin: 0 23px;
+        background-color: white;
+        color: blueviolet;
+        font-size: large;
+        font-weight: 500;
+        border: 1.5px solid rgb(123, 111, 179);
+        border-width: 4px;
+        border-radius: 10px;
+        padding: 12px 25px;
+    }
+
+    .second {
+        max-width: 80vw;
+        margin: auto;
+        height: 40vh;
+        font-size: 1.4rem;
+    }
+
+    .second h1 {
+        font-size: 1.6rem;
+    }
+
+    .footer {
+        text-align: center;
+        margin: auto;
+        padding: 40px;
+        height: 5px;
+    }
+
+    .footer li {
+        padding: 1px;
+        font-size: 1.1rem;
+    }
+
+    .footerrights {
+        text-align: center;
+        padding: 30px 0;
+    }
+</style>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+
+<body>
+    <header class="fixedheader">
+        <nav>
+            <div class="left">Aadarsh's Portfolio </div>
+            <div class="right">
+                <ul>
+                    <li><a href="#Home">Home</a></li>
+                    <li><a href="#About">About</a></li>
+                    <li><a href="#Experiance">Experiances</a></li>
+                    <li><a href="#Skills">Skills</a></li>
+                    <li><a href="#Contact">Contact Me</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="Home" class="first">
+            <div class="leftsection">
+                Hi, My name is <span class="purple">Aadarsh</span>
+                <li>and I'm a passionate</li>
+                <span id="element"></span>
+                <div class="button">
+                    <a href="https://www.linkedin.com/in/aadarsh-chand-702a871a8"><button class="btn"><img src="linkedin.png" width="60" height="55" alt=""></button></a>
+                    <a href="https://github.com/adachand"><button class="btn"><img src="github.png" width="60" height="55" alt=""></button></a>
+                    <a href="https://drive.google.com/file/d/1A3c7-zvdOUlygUccRDjFHNI5vtE0YLjg/view?usp=drivesdk "><button class="btn"><img src="resume.png" width="60" height="55" alt=""></button></a>
+                </div>
+            </div>
+            <div class="rightsection">
+                <img src="aadarsh.jpg" width="300" height="350" alt="Avatar">
+            </div>
+        </section>
+
+        <section id="About" class="about">
+            <h1>About Me</h1>
+            <br>
+            <p>Hello, I'm Aadarsh chand, currently pursuing a B.Tech in Computer Science at Graphic Era Hill University in Dehradun. 
+                Proficiency in programming languages like C, C++, and Java has been my forte, 
+                and I've cultivated these skills through a combination of hands-on experience and rigorous coursework. 
+                Beyond my academic pursuits, I am deeply passionate about technology and always eager to explore new horizons. 
+                In my free time, I engage in learning and experimenting with Android and web development, constantly pushing my boundaries to 
+                stay updated with the latest trends in the tech world.</p>
+        </section>
+
+        <section id="Skills" class="skills">
+            <h1>Skills</h1>
+            <br>
+            <br>
+            <ul>
+                <li>C</li>
+                <li>C++</li>
+                <li>Java</li>
+                <li>SQL</li>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Javascript</li>
+            </ul>
+
+        </section>
+
+        <section id="Experiance" class="second">
+            <span class="textgrey">What I have done so far</span>
+            <h1>Work Experience</h1>
+            <br>
+            <li>Oasis Infobyte</li>
+            <li>Bharat Intern</li>
+            <li>Codsoft</li>
+            <li>Date:- Oct 2024 -Nov 2024 </li>
+            <li>Position:- Working as Web Devloper and ML Engineer </li>
+        </section>
+        <hr>
+    </main>
+
+    <footer id="Contact" class="footer">
+        <h1>Contact Me</h1>
+        <br>
+        <li>Email: cadarsh075@gmail.com</li>
+        <li>Phone:567-123-7790</li>
+        <div class="footerrights">
+            Copyright &#169 www.AadarshPortfolio.com | All rights reserved
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
